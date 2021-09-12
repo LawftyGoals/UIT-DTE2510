@@ -1,0 +1,48 @@
+import turtle
+
+turtle.pensize(3)
+turtle.fillcolor('yellow')
+turtle.begin_fill()
+turtle.circle(100)
+turtle.end_fill()
+turtle.up()
+
+turtle.goto(-50, 120)
+turtle.down()
+turtle.right(90)
+turtle.circle(20, 180)
+turtle.up()
+
+turtle.goto(20, 120)
+turtle.down()
+turtle.right(180)
+turtle.circle(20, 180)
+turtle.up()
+
+turtle.goto(-60,75)
+turtle.down()
+turtle.right(180)
+turtle.fillcolor('black')
+turtle.begin_fill()
+turtle.circle(60, 180)
+turtle.end_fill()
+turtle.up()
+
+turtle.goto(20,40)
+turtle.down()
+#turtle.right(180)
+turtle.fillcolor('red')
+turtle.begin_fill()
+turtle.circle(20)
+turtle.end_fill()
+turtle.up()
+
+turtle.goto(5,55)
+turtle.down()
+#turtle.right(180)
+turtle.fillcolor('black')
+turtle.begin_fill()
+turtle.circle(5)
+turtle.end_fill()
+turtle.up()
+

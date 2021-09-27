@@ -23,4 +23,13 @@ def isPalindrome(number):
     
     return "Tallet er et palindrome tall!" if isaPalindrome == True else "Tallet er ikke et palindrome tall!"
 
-def 
+def main():
+    print(reverse(input("Velg et tall for å reversere den: ")))
+
+    print(isPalindrome(input("Velg et tall for å sjekke om den er en palindrome: ")))
+
+
+
+
+
+main()

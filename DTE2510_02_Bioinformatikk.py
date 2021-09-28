@@ -1,34 +1,31 @@
-def parser(stringy):
+def genomeParser(genome):
 
-    tester = []
+    starter = "ATG"
 
+    ender = ["TAG", "TAA", "TGA", "ATG"]
 
-    genes = ""
+    genes = []
 
-    for i in range(0,len(stringy)-1,3):
-
-        geneTrip = ""
-
-        for j in range(0,3):
-            geneTrip += stringy[i+j]
+    if starter in genome:
+        for i in genome.split("ATG"):
+            geneCol = ""
+            for j in range(len(i)-2):
+                if (i[j]+i[j+1]+i[j+2]) in ender:
+                    break
+                else:
+                    geneCol += i[j]
+            genes.append(geneCol)
         
-        tester.append(geneTrip)
+        for ii in genes:
+            print(ii)
 
-    print(tester)
-    isGene = False
+    else:
+        print("Ingen gener funnet")
 
-    for ii in range(len(tester)):
 
-        if isGene:
-            genes+=tester[ii]
+def main():
+    genomeParser(input("Legg inn genome streng for å sjekke om det er gener: "))
 
-        if (isGene == True) and (tester[ii] == "TAG" or tester[ii] == "ATG" or tester[ii] == "TAA" or tester[ii] == "TGA"):
-            isGene = False
-            print(genes)
-            genes = ""
-        elif tester[ii] == "ATG":
-            isGene = True
 
-    print(genes)
-
-parser("TTATGTTTTAAGGATGGGGCGTTAGTT")
+main()
+                

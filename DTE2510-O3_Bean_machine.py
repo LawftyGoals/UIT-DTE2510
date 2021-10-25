@@ -16,7 +16,7 @@ def in_motion (slots_nr: int, balls: int):
                 path +=1
                 path_string += "R"
             
-        slots[path] +=1
+        slots[path-1] +=1
         
         print(path_string)
 

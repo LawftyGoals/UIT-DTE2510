@@ -25,8 +25,6 @@ def in_motion (slots_nr: int, balls: int):
 # This could be made as it's own function. histogram_creation() function feks.
 # Black - PIP makes sure code is formatted correctly.
 # Added return statement to in_motion, this passes to slots in main(), then uses print_histogram function.
-#
-#
 
 def print_histogram(slots: list):
 

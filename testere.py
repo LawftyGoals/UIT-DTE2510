@@ -2,7 +2,19 @@ from tkinter import *
 
 class testere:
 
-    def __init__(self):
+    def __init__(self, s):
+        self.s = s
+
+    def print(self):
+        print(self.s)
+
+
+t = testere("welcome")
+
+t.print()
+
+"""
+
         window = Tk()
         window.title("Grid Manager Demo")
 
@@ -16,11 +28,15 @@ class testere:
 
         window.mainloop()
 
-testere()
+        if self.pos_x <= self.width-15 and self.pos_x >= 5 and self.pos_y <= self.height-15 and self.pos_y >= 5:
+            self.pos_x += self.speed_x
+        else:
+            self.speed_x = 0
+        if self.pos_y <= self.height-15 and self.pos_y >= 5:
 
-
-
-"""
+            self.pos_y += self.speed_y
+        else:
+            self.speed_y = 0
 
         window.title("Canvas Demo")
 

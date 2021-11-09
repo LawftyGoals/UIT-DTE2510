@@ -10,6 +10,7 @@ class EQ:
 
     def set(self, index_num, value_num):
 
+
         self.queens[index_num] = value_num
 
     def isSolved(self):

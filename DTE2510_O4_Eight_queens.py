@@ -10,7 +10,6 @@ class EQ:
 
     def set(self, index_num, value_num):
 
-
         self.queens[index_num] = value_num
 
     def isSolved(self):
@@ -99,4 +98,6 @@ def main ():
 
         print("Eight queens are placed incorrectly in board2")
 
-main()
+
+if __name__ == "__main__":
+    main()
